@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-canvas: #f8f9fb;
+    --card-bg: #ffffff;
+    --card-border: #eef0f4;
+    --text-primary: #111827;
+    --text-secondary: #64748b;
+    --text-muted: #94a3b8;
+    --accent-primary: #d97706; /* Warm amber/honey accent */
+    --accent-hover: #b45309;
+    --accent-subtle: #fef3c7;
+    --color-income: #10b981; /* Emerald green */
+    --color-income-subtle: #ecfdf5;
+    --color-expense: #ef4444; /* Coral/crimson red */
+    --color-expense-subtle: #fef2f2;
+    --radius-card: 16px;
+  }
+
+  .dark {
+    --bg-canvas: #0b0f17;
+    --card-bg: #151c28;
+    --card-border: #1f293d;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --accent-primary: #f59e0b;
+    --accent-hover: #d97706;
+    --accent-subtle: #291e0a;
+    --color-income: #34d399;
+    --color-income-subtle: #064e3b33;
+    --color-expense: #f87171;
+    --color-expense-subtle: #7f1d1d33;
+  }
+
+  body {
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Always use tabular numerals for money/currency display */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
